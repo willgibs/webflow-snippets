@@ -46,7 +46,7 @@ The script also listens for arrow key events when the modal window is displayed.
 ## Ways to modify it
 You can modify the following aspects of the script to suit your needs:
 
-- **Keyboard shortcut:** You can change the keyboard shortcut to something other than `k` + `command` or `k` + `control` by modifying the `if` statement in the first event listener function.
+- **Keyboard shortcut:** You can change the keyboard shortcut to something other than `k` + `command` (Mac) or `k` + `control` (Windows) by modifying the `if` statement in the first event listener function.
 - **Modal window content:** You can modify the content of the modal window by changing the links in the HTML code of the modal element. You can also style the modal window using CSS.
 - **Ignored link:** You can add an `id` of `ignoreLink` to any link element within the modal window to prevent it from being included in the arrow key navigation.
 
