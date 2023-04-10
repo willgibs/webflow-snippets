@@ -2,7 +2,7 @@
 This is a script that creates a simple command menu that can be activated using a keyboard shortcut. When activated, a modal window is displayed with links to various pages or actions on your website. The user can navigate the links in the modal window using the arrow keys on their keyboard.
 
 ## How it works
-The script adds event listeners to the document object to listen for keyboard events and button clicks. When the user presses the specified keyboard shortcut, the modal window is displayed by changing the `display` CSS property of the modal element to `flex`. If the modal window is already displayed, pressing the keyboard shortcut again will hide the modal window.
+The script adds event listeners to the document object to listen for keyboard events and button clicks. When the user presses the specified keyboard shortcut, a specified `div` is displayed by changing the `display` CSS property of the element to `flex`. If the element is already displayed, pressing the keyboard shortcut again will hide the element.
 
 The script also listens for arrow key events when the modal window is displayed. When the user presses an arrow key, the script finds the currently focused link element and moves the focus to the next or previous link element depending on which arrow key was pressed. The script also scrolls the modal window to keep the currently focused link element in view.
 
