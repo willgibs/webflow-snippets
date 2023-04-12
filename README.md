@@ -1,5 +1,7 @@
 # Webflow Snippets
 
+[![Twitter](https://img.shields.io/twitter/url/https/twitter.com/willgibs.svg?style=social&label=Follow%20%40willgibs)](https://twitter.com/willgibs)
+
 This is a repository containing code snippets that can be used to enhance your Webflow site builds. The snippets cover a range of topics, from animations and interactions to forms and custom code. Each snippet is designed to be easy to implement and customize, so you can use them to build better and more engaging websites.
 
 ## How to use
