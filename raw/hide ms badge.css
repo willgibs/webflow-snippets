@@ -1,4 +1,4 @@
-<!-- Remove Memberstack 'Test Mode' badge -->
+/* Remove Memberstack 'Test Mode' badge */
 <style>
   .ms-test-label {
     visibility: hidden !important;
