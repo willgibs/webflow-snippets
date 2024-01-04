@@ -1,4 +1,5 @@
 # Modal Tab Links
+
 ## Purpose
 This script enhances Webflow modal functionality by allowing direct linking to specific tabs within the modal. It automatically updates the URL hash based on the active tab, enabling users to share or bookmark specific tab states.
 
@@ -47,8 +48,8 @@ The script utilizes JavaScript to handle tab changes and URL hash updates. When 
 ```
 
 ## Potential Modifications
-Adjust the const `offset` variable to match the height of any fixed headers on your site.
-Customize the script to handle specific tab behaviors or add additional features as needed.
+- Adjust the const `offset` variable to match the height of any fixed headers on your site.
+- Customize the script to handle specific tab behaviors or add additional features as needed.
 
 ## Implementation in Webflow
 
