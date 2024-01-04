@@ -1,14 +1,14 @@
 # Dynamic Login Link
 
 ## Purpose
-This script enhances the login link's functionality by dynamically updating its destination based on the user's login status. If the user is logged in, the link redirects to a member-specific URL; otherwise, it redirects to a specified logged-out content URL.
+This script enhances a login link by dynamically updating its destination based on the user's login status. If the user is logged in, the link redirects to a member-specific URL (e.g. /dashboard); otherwise, it redirects to a specified logged-out content URL (e.g. /login).
 
-H## ow It Works
-The script uses MemberStack to check the user's login status. It then updates the `href` attribute of the login link accordingly, redirecting the user to the appropriate page based on their login status.
+## How It Works
+The script uses Memberstack to check the user's login status. It then updates the `href` attribute of the login link accordingly, redirecting the user to the appropriate page based on their login status.
 
 ```html
 <!-- Insert the login link with dynamic behavior into your HTML -->
-<a href="/login" data-ms-member="/user/spaces" data-ms-content="/login" class="button is-secondary">Log in</a>
+<a href="/login" data-ms-member="/dashboard" data-ms-content="/login" class="button is-secondary">Log in</a>
 ```
 
 ```javascript
@@ -17,10 +17,10 @@ The script uses MemberStack to check the user's login status. It then updates th
     // Select the login link
     var link = document.querySelector('a[data-ms-member]');
 
-    // Check the user's login status using MemberStack
+    // Check the user's login status using Memberstack
     window.$memberstackDom.getCurrentMember().then(({ data: member }) => {
       if (member) {
-        // User is logged in, update the link's href to the member-specific URL
+        // User is logged in, update the link's href to the member URL
         link.setAttribute('href', link.getAttribute('data-ms-member'));
       } else {
         // User is logged out, update the link's href to the logged-out content URL
@@ -32,7 +32,7 @@ The script uses MemberStack to check the user's login status. It then updates th
 ```
 
 ## Potential Modifications
-- Adjust the '/login' default URL, '/user/spaces' member-specific URL, and '/login' logged-out content URL based on your project structure.
+- Adjust the `/login` default URL, `/dashboard` member URL, and `/login` logged-out content URL based on your project structure.
 - Customize the link styling or attributes to match your design preferences.
 
 ## Implementation in Webflow

@@ -1,10 +1,10 @@
-# Skeleton Screens + Content Loaders
+# Skeleton Loaders
 
 ## Purpose
-This script and style combination enables the implementation of skeleton screens and content loaders on specified elements. Skeleton screens provide a visual indication of content loading, enhancing user experience.
+This snippet enables skeleton loaders on specified elements. Skeleton screens provide a visual indication of content loading, enhancing user experience.
 
 ## How It Works
-The script targets elements with the attribute [ms-code-skeleton] and dynamically adds a skeleton loader div. The loader div is animated with a gradient, creating the illusion of content loading. The delay for displaying the skeleton can be set using the ms-code-skeleton attribute.
+The script targets elements with the custom attribute `ms-code-skeleton` and dynamically adds a skeleton loader div. The loader div is animated with a gradient, creating the illusion of content loading. The delay for displaying the skeleton can be set in milliseconds using the `ms-code-skeleton` attribute.
 
 ```javascript
 <script>
@@ -65,16 +65,21 @@ window.addEventListener("DOMContentLoaded", (event) => {
 ```
 
 ## Potential Modifications
-- Apply the `[ms-code-skeleton]` attribute to the HTML elements where you want to display skeleton screens.
+- Apply the `ms-code-skeleton` custom attribute to the HTML elements where you want to display skeleton screens with a value matching the millisecond delay on load.
+- Adjust the delay value for each element individually by setting the `ms-code-skeleton` attribute.
 - Customize the gradient, animation, and other styles to match your design preferences.
-- Adjust the delay value for each element individually by setting the ms-code-skeleton attribute.
 
 ## Implementation in Webflow
 
 1. Open your Webflow project.
 2. Navigate to the page where you want to implement skeleton screens.
-3. Add an Embed element to the page.
-4. Paste the provided script and styles into the Embed element's code section.
-5. Save the changes, and republish your site.
+3. Add code snippets to page code before </body> tag
+4. Select the div block to display the skeleton loader animation
+5. Add `ms-code-skeleton` as a custom attribute name
+6. Enter the animation length in milliseconds as the value (`2000` is 2 seconds)
+7. Save the changes, and republish your site.
 
-Now, the specified elements with the `[ms-code-skeleton]` attribute will display skeleton screens with content loaders, creating a smooth loading experience for your users. Customize the script and styles as needed for your project.
+Now, the specified elements with the `ms-code-skeleton` attribute will display skeleton screens with content loaders, creating a smooth loading experience for your users.
+
+### Credits
+[Memberstack](https://www.memberstack.com/scripts/23-skeleton-screens-content-loaders)
