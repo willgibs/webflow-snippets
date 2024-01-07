@@ -6,9 +6,9 @@ A repository of code snippets to enhance Webflow site builds. Covers a range of 
 
 ## How to use
 1. Browse the repository and find a useful snippet
-1a. Each snippet includes an overview, implementation guide & potential modifications
-2. Copy the code from the repository and paste it into your Webflow project
-3. Publish your site and test the code in the live version
+2. Each snippet includes an overview, implementation guide & potential modifications
+3. Copy the code from the repository and paste it into your Webflow project
+4. Publish your site and test the code in the live version
 
 ## Contributing
 If you have a code snippet that you'd like to contribute to this repository, please create a pull request. All contributions are appreciated!
