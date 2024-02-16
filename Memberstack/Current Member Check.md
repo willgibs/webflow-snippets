@@ -17,10 +17,11 @@ window.$memberstackDom.getCurrentMember().then(({ data: member }) => {
 ```
 
 ## Potential Modifications
-- Update the '/login' URL to match the path of your redirect page.
+- Update the `/login` URL to match the path of your redirect page.
 - Customize the redirection logic or add additional actions based on your specific requirements.
 
 ## Implementation in Webflow
+
 1. Open your Webflow project.
 2. Navigate to the page where you want to implement the member check.
 3. Add to the page code.
